@@ -16,7 +16,7 @@ export default [
       'max-len': [
         'error',
         {
-          code: 80,
+          code: 60,
           ignoreUrls: true,
         },
       ],

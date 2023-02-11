@@ -27,13 +27,5 @@ export default {
         content: 'width=device-width, initial-scale=1.0',
       },
     },
-    {
-      tag: 'style',
-      text: `
-      .my-input {
-        background: black;
-      }
-      `
-    },
   ],
 };
