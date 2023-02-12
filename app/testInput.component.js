@@ -1,17 +1,26 @@
-const defaultMessage = 'Initial text';
+import { colors } from "./roadmap.component.js";
 
+const defaultMessage = "Initial text";
+
+const inputStyles = {
+  marginTop: "50px",
+  color: colors.black,
+  padding: "10px",
+  borderRadius: "8px",
+};
 /** @type {Schema} */
 export default {
-  tag: 'div',
+  tag: "div",
   model: {
     state: { text: defaultMessage },
   },
   children: [
     {
-      tag: 'input',
-      classes: 'my-input',
+      tag: "input",
+      classes: "my-input",
+      styles: inputStyles,
       attrs: {
-        placeholder: 'Type here...',
+        placeholder: "Type here...",
       },
       events: {
         input() {
@@ -21,14 +30,14 @@ export default {
       },
     },
     {
-      tag: 'p',
+      tag: "p",
       styles: {
         compute: (state) =>
           state.text.length > 5
             ? {
-                color: 'green',
+                color: colors.white,
               }
-            : { color: 'red' },
+            : { color: "red" },
       },
       text: (state) => state.text,
     },
