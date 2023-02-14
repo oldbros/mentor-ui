@@ -1,35 +1,35 @@
 /** @type {Schema} */
 
 export default {
-  tag: "head",
+  tag: 'head',
   children: [
     {
-      tag: "title",
-      text: "Swayer app",
+      tag: 'title',
+      text: 'Swayer app',
     },
     {
-      tag: "link",
+      tag: 'link',
       attrs: {
-        rel: "icon",
-        type: "image/png",
-        href: "/assets/favicon.png",
+        rel: 'icon',
+        type: 'image/png',
+        href: '/assets/favicon.png',
       },
     },
     {
-      tag: "meta",
+      tag: 'meta',
       attrs: {
-        charset: "utf-8",
+        charset: 'utf-8',
       },
     },
     {
-      tag: "meta",
+      tag: 'meta',
       attrs: {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1.0',
       },
     },
     {
-      tag: "style",
+      tag: 'style',
       text: `
       .my-input {
         background: #fefefe;
