@@ -1,6 +1,5 @@
 /** @implements {Model} */
 export default class RoadmapModel {
-  
   state = { roadmap: [] };
 
   async load() {

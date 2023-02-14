@@ -1,5 +1,13 @@
+import { colors } from './roadmap.component.js';
+
 const defaultMessage = 'Initial text';
 
+const inputStyles = {
+  marginTop: '50px',
+  color: colors.black,
+  padding: '10px',
+  borderRadius: '8px',
+};
 /** @type {Schema} */
 export default {
   tag: 'div',
@@ -10,6 +18,7 @@ export default {
     {
       tag: 'input',
       classes: 'my-input',
+      styles: inputStyles,
       attrs: {
         placeholder: 'Type here...',
       },
@@ -26,7 +35,7 @@ export default {
         compute: (state) =>
           state.text.length > 5
             ? {
-                color: 'green',
+                color: colors.white,
               }
             : { color: 'red' },
       },

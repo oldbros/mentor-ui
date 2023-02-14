@@ -1,4 +1,5 @@
 /** @type {Schema} */
+
 export default {
   tag: 'head',
   children: [
@@ -31,9 +32,9 @@ export default {
       tag: 'style',
       text: `
       .my-input {
-        background: black;
+        background: #fefefe;
       }
-      `
+      `,
     },
   ],
 };
