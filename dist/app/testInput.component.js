@@ -1,1 +1,0 @@
-const t='Initial text';export default{tag:'div',model:{state:{text:t}},children:[{tag:'input',classes:'my-input',attrs:{placeholder:'Type here...'},events:{input(){const e=this.props.value;this.model.state.text=e||t}}},{tag:'p',styles:{compute:t=>t.text.length>5?{color:'green'}:{color:'red'}},text:t=>t.text}]};
