@@ -1,9 +1,10 @@
 /** @type {Schema} */
 export default {
   namespaces: {
-    '@app': 'app',
+    '@site': 'app/site',
+    '@roadmap': 'app/roadmap',
   },
   children: [
-    { path: '@app/page.component' },
+    { path: '@site/page.component' },
   ],
 };

@@ -1,1 +1,0 @@
-export default class e{state={roadmap:[]};async load(){this.state.roadmap=[{mainNode:'Internet',left:['What','Where'],right:['Why']},{mainNode:'Internet',left:['What','Where','Why'],right:['What 2','Where 3','Why4']}]}}
